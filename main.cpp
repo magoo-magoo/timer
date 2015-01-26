@@ -1,5 +1,4 @@
 #include <iostream>
-#include <thread>
 
 #include "Timer.hpp"
 
@@ -16,7 +15,6 @@ int main(int , char const**)
     Timer<std::chrono::seconds> timer_sec;
     timer_sec.sleep(1);
     std::cout << "seconds: " << timer_sec.elapsed() << std::endl;
-
 
     return 0;
 }
